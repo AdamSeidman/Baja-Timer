@@ -8,3 +8,11 @@ var server = {
     endpoints: endpoints,
     port: PORT
 }
+
+var setup = function () {
+    server.server = createServer(server.fileLoc, server.endpoints, server.port)
+}
+
+module.exports = {
+    setupWebServer: setup
+}
