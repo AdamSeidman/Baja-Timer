@@ -2,7 +2,7 @@
   "name": "baja-timer",
   "version": "1.0.0",
   "description": "Baja Timer",
-  "main": "client/client.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/AdamSeidman/Baja-Timer/issues"
   },
-  "homepage": "https://github.com/AdamSeidman/Baja-Timer#readme"
+  "homepage": "https://github.com/AdamSeidman/Baja-Timer#readme",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "eslint": "^7.9.0",
+    "ffmpeg-static": "^4.2.7",
+    "http-server": "^0.12.3",
+    "serve-static": "^1.14.1",
+    "sqlite3": "^5.0.0"
+  }
 }
