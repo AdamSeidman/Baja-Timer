@@ -1,0 +1,19 @@
+{
+  "name": "baja-timer",
+  "version": "1.0.0",
+  "description": "Baja Timer",
+  "main": "client/client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamSeidman/Baja-Timer.git"
+  },
+  "author": "Adam Seidman, RIT Baja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamSeidman/Baja-Timer/issues"
+  },
+  "homepage": "https://github.com/AdamSeidman/Baja-Timer#readme"
+}
