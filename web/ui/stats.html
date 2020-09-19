@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timing|Setup</title>
+    <title>Timing|Stats</title>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="entry-script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -13,34 +12,25 @@
 <body class="dark" id="container">
     <div class="main-content m-5">
         <h1 class="mb-4">RIT BAJA TIMER</h1><br>
-        <div class="car-section">
-            <div class="input-group w-75 mb-4">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="">School</span>
-                </div>
-                <input type="text" class="form-control">
-            </div>
-            <div class="input-group w-75 mb-4">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="">Car Number</span>
-                </div>
-                <input type="text" class="form-control">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Add</button>
-                </div>
-            </div>
-        </div>
-        <br><hr><br>
-        <h2>Race Time</h2>
-        <div class="input-group mb-4">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="">Race Time (in hours) </span>
-            </div>
-            <input type="text" class="form-control" placeholder="4.0">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">Submit</button>
-                <button class="btn btn-secondary" type="button">Cancel</button>
-            </div>
+        <div class="other-stats m-2">
+            <h3>Race Time Left:</h3>
+            <h3>Leader:</h3>
+        </div><br>
+        <div class="stat-section">
+            <table class="table">
+                <thead>
+                    <th scope='col'>#</th>
+                    <th scope='col'>School</th>
+                    <th scope='col'>Last Lap</th>
+                    <th scope='col'># Laps</th>
+                    <th scope='col'>3-Lap Avg.</th>
+                    <th scope='col'>5-Lap Avg.</th>
+                    <th scope='col'>Lap Avg</th>
+                    <th scope='col'>Next Appearance</th>
+                    <th scope='col'># Pits</th>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
