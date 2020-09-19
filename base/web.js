@@ -1,7 +1,7 @@
-const { endpoints } = require('../web/endpoints')
+const endpoints = [] // require('../web/endpoints') // todo, add and {}
 const { createServer } = require('../web/server')
 
-const PORT = 8081
+const PORT = 8080
 
 var server = {
     fileLoc: `${__dirname}\\..\\web\\ui\\`,

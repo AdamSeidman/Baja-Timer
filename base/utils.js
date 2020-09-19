@@ -1,5 +1,4 @@
 const cp = require('child_process')
-const exitVoiceChannels = require('./voice').endAll
 
 const MAX_RAND = 98
 
@@ -17,13 +16,6 @@ const headers = {
     'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With',
     'sec-fetch-mode': 'no-cors'
-}
-
-var restartApp = function (cmd, response) {
-    exitVoiceChannels()
-    response.writeHead(200, headers)
-    response.end()
-    process.exit()
 }
 
 var randomNumber = function (max) {
@@ -61,7 +53,6 @@ var fixPathCharacters = function (str) {
 
 module.exports = {
     HTTPheaders: headers,
-    restartApp: restartApp,
     randomNumber: randomNumber,
     randomArrayItem: randomArrayItem,
     stripPunctuation: stripPunctuation,
