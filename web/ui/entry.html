@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing|Data</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="entry-script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</head>
+<body class="dark" id="container">
+    <div class="main-content m-5">
+        <h1 class="mb-4">RIT BAJA TIMER</h1><br>
+        <div id="cars-section" class="mb-3 bruh">
+            <!-- START TEMPLATE -->
+            <!--div class="car mb-3"><div class="input-group mb-5">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" 
+                    aria-describedby="basic-addon2" disabled style="background:lightgrey;"><div class="input-group-append"><button class="btn btn-primary" type="button">Lap</button>
+                </div></div></div-->
+            <!-- STOP TEMPLATE -->
+        </div><br><hr><br>
+        <h2 class="mb-2">Fix Section</h2><br>
+        <div class="dropdown mb-4">
+            <button class="btn btn-secondary dropdown-toggle action-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Action
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" onclick="setActionText('Undo Last Lap')">Undo Last Lap</a>
+              <a class="dropdown-item" href="#" onclick="setActionText('Add Generic Lap')">Add Generic Lap</a>
+              <a class="dropdown-item" href="#" onclick="setActionText('Remove Generic Lap')">Remove Generic Lap</a>
+              <a class="dropdown-item" href="#" onclick="setActionText('Pit')">Pit</a>
+            </div>
+            <span class="action-dropdown">No Action Chosen</span>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Car
+            </button>
+            <div class="dropdown-menu car-dropdown" aria-labelledby="dropdownMenuButton">
+            </div>
+            <span class="car-dropdown-text">No Car Chosen</span>
+        </div>
+        <button type="button" class="btn btn-primary mt-4" onclick="submit()">Submit</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
